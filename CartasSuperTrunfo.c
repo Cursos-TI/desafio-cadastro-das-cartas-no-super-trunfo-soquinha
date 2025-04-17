@@ -9,13 +9,13 @@ int main() {
 
     char estado[30], cidade[20], carta[4]; // Variável criada no tipo char, para armazenar o nome do estado, da cidade e da carta
     int populacao, pt; // Variável criada no tipo inteiro, para armazenar a população da cidade e a quantidade de pontos turísticos 
-    float area, pib; // Variável criada no tipo float, para armazenar a área e o PIB
+    float area, pib, denpop, pibcpt; // Variável criada no tipo float, para armazenar a área, o PIB, a densidade populacional e o PIB por Capita
 
     // Variáveis para a segunda carta
 
     char estado2[30], cidade2[20], carta2[4]; // Variável criada no tipo char, para armazenar o nome do estado, da cidade e da carta da segunda carta
     int populacao2, pt2; // Variável criada no tipo inteiro, para armazenar a população da cidade e a quantidade de pontos turísticos da segunda carta
-    float area2, pib2; // Variável criada no tipo float, para armazenar a área e o PIB da segunda carta
+    float area2, pib2, denpop2, pibcpt2; // Variável criada no tipo float, para armazenar a área, o PIB, a densidade populacional e o PIB por Capita
     
     // Entrada e saída da primeira carta
 
@@ -45,6 +45,9 @@ int main() {
     printf("Informe a quantidade de pontos turísticos que há nesta cidade: \n");
     scanf(" %d", &pt);
 
+    pibcpt = pib / populacao; // Cálculo do PIB per Capita
+    denpop = populacao / area; // Cálculo da Densidade Populacional
+
     // Entrada e saída da segunda carta
 
     printf("Agora, vamos criar sua segunda carta. \n");
@@ -71,6 +74,9 @@ int main() {
     printf("Insira a quantidade de pontos turísticos dessa cidade: \n");
     scanf("%d", &pt2);
 
+    pibcpt2 = pib2 / populacao2; // Cálculo do PIB per Capita
+    denpop2 = populacao2 / area2; // Cálculo da Densidade Populacional
+
     // Atributos da PRIMEIRA carta cadastrada pelo usuário
 
     printf("Suas cartas foram criadas com sucesso!!! \n");
@@ -82,6 +88,8 @@ int main() {
     printf("Área: %.1fkm² \n", area); 
     printf("PIB: R$%.1f \n", pib);  
     printf("Pontos turísticos: %d \n", pt);
+    printf("PIB per Capita: %.1f", pibcpt);
+    printf("Densidade Populacional: %.1fhab/km²\n", denpop);
 
     // Atributos da SEGUNDA carta cadastrada pelo usuário
 
@@ -93,6 +101,8 @@ int main() {
     printf("Área: %.1fkm² \n", area2);  
     printf("PIB: R$%.1f \n", pib2);  
     printf("Pontos turísticos: %d \n", pt2);
+    printf("PIB per Capita: %.1f", pibcpt2);
+    printf("Densidade Populacional: %.1fhab/km²\n", denpop2);
 
     printf("Obrigado por realizar o cadastro. Boa jogatina!");
 
