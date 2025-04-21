@@ -8,22 +8,22 @@ int main() {
      // Variáveis para a primeira carta
 
     char estado[30], cidade[20], carta[4]; // Variável criada no tipo char, para armazenar o nome do estado, da cidade e da carta
-    int pt; // Variável criada no tipo inteiro para armazenar a quantidade de pontos turísticos 
-    float area, pib, denpop, pibcpt; // Variável criada no tipo float, para armazenar a área, o PIB, a densidade populacional e o PIB por Capita
-    unsigned long int populacao; // Variável criada no tipo unsigned long int para armazenar a população
-    float superpoder; // Variável criada no tipo float para armazenar o poder total
+    int pt = 13; // Variável criada no tipo inteiro para armazenar a quantidade de pontos turísticos 
+    float area = 14, pib =  15, denpop = 16, pibcpt = 17; // Variável criada no tipo float, para armazenar a área, o PIB, a densidade populacional e o PIB por Capita
+    unsigned long int populacao = 600; // Variável criada no tipo unsigned long int para armazenar a população
+    float superpoder = 18; // Variável criada no tipo float para armazenar o poder total
 
     // Variáveis para a segunda carta
 
     char estado2[30], cidade2[20], carta2[4]; // Variável criada no tipo char, para armazenar o nome do estado, da cidade e da carta da segunda carta
-    int pt2; // Variável criada no tipo inteiro, para armazenar a quantidade de pontos turísticos da segunda carta
-    float area2, pib2, denpop2, pibcpt2; // Variável criada no tipo float, para armazenar a área, o PIB, a densidade populacional e o PIB por Capita
-    unsigned long int populacao2; // Variável criada no tipo unsigned long int para armazenar a população da segunda carta
-    float superpoder2; // Variável criada no tipo float para armazenar o valor do poder total da segunda carta
+    int pt2 = 12; // Variável criada no tipo inteiro, para armazenar a quantidade de pontos turísticos da segunda carta
+    float area2 = 8, pib2 = 9, denpop2 = 10, pibcpt2 = 11; // Variável criada no tipo float, para armazenar a área, o PIB, a densidade populacional e o PIB por Capita
+    unsigned long int populacao2 = 500; // Variável criada no tipo unsigned long int para armazenar a população da segunda carta
+    float superpoder2 = 8.1; // Variável criada no tipo float para armazenar o valor do poder total da segunda carta
 
     // Variáveis de resultado
 
-    int resultadoPop, resultadoPt, resultadoPIB, resultadoPIBCpt, resultadoArea, resultadoSuperP, resultadoDenPop;
+    int resultadoPop = 1, resultadoPt = 2, resultadoPIB = 3, resultadoPIBCpt = 4, resultadoArea = 5, resultadoSuperP = 6, resultadoDenPop = 7;
 
     // Entrada e saída da primeira carta
 
