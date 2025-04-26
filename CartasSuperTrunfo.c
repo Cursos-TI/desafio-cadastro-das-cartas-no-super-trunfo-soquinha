@@ -89,7 +89,7 @@ int main() {
 
     // Cálculo de resultado
 
-    resultadoPop = populacao2 > populacao;
+    resultadoPop = populacao > populacao2;
     resultadoPt = pt > pt2;
     resultadoPIB = pib > pib2;
     resultadoPIBCpt = pibcpt > pibcpt2;
